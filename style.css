@@ -1,0 +1,74 @@
+html{
+    background-image: url(tree.png) ;
+}
+img{
+    height: 90px;
+    width: 90px;
+    border-radius: 40%;
+}
+img:hover{
+    opacity: 0.6;
+}
+.header{
+    color: white;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 20px;
+    
+}
+.body{
+    color: white;
+    text-align: center;
+    justify-items: center;
+    padding-top: 100px;
+}
+.nav{
+    margin: 0 auto;
+    margin-right: 0%;
+    padding-right: 200px;
+}
+ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        text-align: center;
+    }
+
+li:last-child{
+    margin-right: 20px;
+}
+li{
+    padding: 10px;
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    background-color: rgb(7, 135, 33);
+    border-radius: 5px;
+    
+}
+h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fall{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+p{
+    width: 700px;
+    text-align: center;
+}
+button{
+    background-color: rgb(41, 236, 41);
+    padding: 10px;
+    border: 1px solid rgb(118, 246, 118);
+    border-radius: 3px;
+}
+button:hover{
+    background-color: rgb(4, 193, 4);;
+}
