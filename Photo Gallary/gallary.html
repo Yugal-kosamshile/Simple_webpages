@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: white;
+        }
+
+        /* Navbar */
+        nav {
+            background: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #32CD32; /* Lime green */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #32CD32;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: #000;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #32CD32;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #aaa;
+        }
+
+        .hero button {
+            background: #32CD32;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #28a428;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 40px;
+        }
+
+        .gallery img {
+            height: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #32CD32;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">PhotoStudio</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <h1>I'm <span style="color: white;">Yugal Kosamshile</span>, a Professional Photographer from New York City</h1>
+    <p>Welcome to my world of photography, where every click tells a story and captures the beauty of fleeting moments. 
+        From breathtaking landscapes to intimate portraits, I strive to create images that inspire, evoke emotions, and preserve memories forever. 
+        Let's create something extraordinary together.</p>
+    <button>AVAILABLE FOR HIRE</button>
+</section>
+
+<!-- Photo Gallery -->
+<section class="gallery" id="gallery">
+    <img src="./images/img (1).jpg" alt="Photo 1">
+    <img src="./images/img (2).jpg" alt="Photo 2">
+    <img src="./images/img (3).jpg" alt="Photo 3">
+    <img src="./images/img (4).jpg" alt="Photo 4">
+    <img src="./images/img (5).jpg" alt="Photo 5">
+    <img src="./images/img (6).jpg" alt="Photo 6">
+    <img src="./images/img (7).jpg" alt="Photo 7">
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 PhotoStudio. All rights reserved. | <a href="#contact">Contact Us</a></p>
+</footer>
+
+</body>
+</html>

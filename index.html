@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage Templates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url(./images/bg2.jpg);  
+            backdrop-filter: blur(5px);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000;
+        }
+
+        nav {
+            background: #2b2b2b;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff6600;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .para {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            padding: 0 200px 0 200px;
+        }
+
+        .gallery-title {
+            margin: 30px 0;
+            font-size: 1.8rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .gallery-title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #ff6600;
+            margin: 10px auto;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-item .caption {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery-item .caption h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .gallery-item .caption h3 a {
+            text-decoration: none;
+            color: #ff6600;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .gallery-item .caption h3 a:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .gallery-item .caption p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #2b2b2b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #aaa;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>EXPLORE SIMPLE WEBPAGE TEMPLATES</h1>
+    <p class="para">Showcasing beautifully crafted and simple designs.</p>
+</header>
+<section>
+    <h2 class="gallery-title">About</h2>
+    <p class="para">
+        Welcome to our collection of webpage templates. Whether you’re looking for 
+        a minimal design or a visually stunning experience, we have something for you. 
+        Each template is crafted to ensure compatibility, modern aesthetics, and usability.
+    </p>
+    <h2 class="gallery-title">Our Templates</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="./images/fedx.png" alt="Template Image 1">
+            <div class="caption">
+                <h3><a href="./ParcelPro/index.html">📦 <span>ParcelPro</span> - Efficient Delivery</a></h3>
+                <p>Fastest and Safest Delivery Agency.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="./images/nature.png" alt="Template Image 2">
+            <div class="caption">
+                <h3><a href="./Love Nature/index.html">🌳 <span>Love Nature</span> - Embrace Greenery</a></h3>
+                <p>Embrace the beauty of greenery.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="./images/gallary.png" alt="Template Image 3">
+            <div class="caption">
+                <h3><a href="./Photo Gallary/gallary.html">📷 <span>Photo Gallery</span> - Capturing Memories</a></h3>
+                <p>Capturing moments and memories.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="./images/snow.png" alt="Template Image 4">
+            <div class="caption">
+                <h3><a href="./Snow/snow.html">📃 <span>Blank Page</span> - Write Your Imagination</a></h3>
+                <p>Create with your own imagination.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="./images/login.png" alt="Template Image 4">
+            <div class="caption">
+                <h3><a href="./Login Page/login.html">👨‍💻 <span>Login Page</span> - Write Your Information</a></h3>
+                <p>Login Into your Account.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="./images/form.png" alt="Template Image 4">
+            <div class="caption">
+                <h3><a href="./Registration Form/form.html">👨‍💻 <span>Registration Form</span> - Register and Join with Us</a></h3>
+                <p>Register and join with the organization</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Simple Webpage Templates. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
