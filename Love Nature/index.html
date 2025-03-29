@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Environmental Friendly Page</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="icon" href="logo.png" type="png">
+    <title>Environmental Friendly Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        <img src="logo.png" alt="logo of the Environmental Friendly webpage">
-        <div class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-       
+    <div class="home">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" class="logo-img"> Environmental Friendly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Content -->
+    <div class="body-content container text-center fade-in">
+        <p class="display-6 fw-bolder">Fall In Love With</p>
+        <h1 class="display-3 text-success fw-bold">NATURE</h1>
+        <p class="lead">Join us in making the world a greener place by adopting sustainable practices and protecting nature.</p>
+        <button class="btn btn-success btn-hover mt-3">Learn More</button>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container-fluid text-center section">
+        <h2 class="text-light">About Us</h2>
+        <p>We are dedicated to promoting environmental sustainability by educating and inspiring people to make greener choices. Our goal is to create a world where nature and human development coexist harmoniously.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container-fluid text-center section">
+        <h2 class="text-light">Our Services</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h4>Eco-Friendly Consulting</h4>
+                <p>We provide expert advice on how to make homes and businesses more sustainable.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Tree Plantation Drives</h4>
+                <p>Join our initiatives to plant trees and restore nature in urban areas.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Recycling Programs</h4>
+                <p>Helping communities set up efficient recycling systems to reduce waste.</p>
+            </div>
         </div>
     </div>
-    <div class="body">
-        <p class="fall">Fall In Love With</p>
-        <h1>NATURE</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, minima? Veniam cupiditate 
-            velit voluptas vel in eveniet. Optio consequuntur, soluta eius quaerat, laboriosam placeat 
-            doloremque consequatur est omnis, facilis dolores! Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Dolore consequuntur dolores cupiditate veniam dolorum fugiat architecto 
-            ex soluta amet voluptatem impedit hic recusandae doloremque, suscipit culpa, nobis eius? Harum, ex.
-        </p>
-        <button type="button" name="more">Learn More</button>
+
+    <div id="contact" class="container-fluid text-center section">
+        <h2 class="text-light">Contact Us</h2>
+        <p>Email: support@environmentalfriendly.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Green Street, Eco City</p>
     </div>
+</div>
 </body>
 </html>

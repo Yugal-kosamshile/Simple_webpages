@@ -3,50 +3,99 @@
 <head>
     <title>ParcelPro</title>
     <link rel="icon" href="./icon2.jpeg" type="image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        /* Animations */
+        .logo {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .nav a, .sign {
+            transition: transform 0.3s, opacity 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav a:hover, .sign:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .options a {
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: black;
+        }
+
+        .options a:hover {
+            transform: translateY(-5px);
+        }
+
+        .track {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .track:hover {
+            transform: scale(1.1);
+            background-color: darkorange;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
      <!-- Header Section -->
-     <div class="header">
+     <div class="header d-flex align-items-center justify-content-between p-3 shadow-lg bg-primary text-white">
         <!-- Logo Section -->
-        <div class="logo">
-            <div class="parcel">Parcel</div>
-            <div class="pro">Pro</div>
+        <div class="logo d-flex">
+            <div class="parcel fs-2 fw-bold">Parcel</div>
+            <div class="pro text-warning fs-2 fw-bold">Pro</div>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="nav">
-            <div>Shopping</div>
-            <div>Tracking</div>
-            <div>Design & Printing</div>
-            <div>Location</div>
-            <div>Support</div>
+        <div class="nav d-flex gap-3">
+            <a href="#" class="p-2">Shopping</a>
+            <a href="#" class="p-2">Tracking</a>
+            <a href="#" class="p-2">Design & Printing</a>
+            <a href="#" class="p-2">Location</a>
+            <a href="#" class="p-2">Support</a>
         </div>
 
         <!-- Sign Up/Login Section -->
-        <div class="sign">
-            Sign Up or Login &#x1F50D;
-        </div>
+        <a href="#" class="sign fw-bold">Sign Up or Login 🔍</a>
     </div>
 
     <!-- Main Content -->
-    <center>
-        <p class="quote">Ship, manage, track, deliver</p>
+    <div class="container text-center mt-5">
+        <p class="quote display-4 fw-bold">Ship, manage, track, deliver</p>
 
-        <div class="options">
-            <div class="rate">Rate & Ship</div>
-            <div class="track1">Track</div>
-            <div class="location">Location</div>
+        <div class="options d-flex justify-content-center gap-3 mt-4">
+            <a href="#" class="rate bg-white shadow-lg p-3 rounded">Rate & Ship</a>
+            <a href="#" class="track1 bg-primary text-white shadow-lg p-3 rounded">Track</a>
+            <a href="#" class="location bg-white shadow-lg p-3 rounded">Location</a>
         </div>
 
-        <div class="trackid">
-            <input type="text" placeholder="Tracking ID">
-            <div class="track">Track</div>
+        <div class="trackid d-flex justify-content-center gap-3 mt-4">
+            <input type="text" class="form-control w-25" placeholder="Tracking ID">
+            <a href="#" class="track bg-warning text-white p-2 rounded">Track</a>
         </div>
 
-        <div class="need">
-            <p>Multiple Tracking Numbers | <a href="#">Need Help?</a></p>
+        <div class="need mt-3">
+            <p>Multiple Tracking Numbers | <a href="#" class="text-primary">Need Help?</a></p>
         </div>
-    </center>
+    </div>
 </body>
 </html>

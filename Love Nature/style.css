@@ -1,74 +1,60 @@
-html{
-    background-image: url(tree.png) ;
-}
-img{
-    height: 90px;
-    width: 90px;
-    border-radius: 40%;
-}
-img:hover{
-    opacity: 0.6;
-}
-.header{
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('tree.jpeg') center center no-repeat;
+    background-size: cover;
     color: white;
+    margin: 0;
+     
+}
+.home{
+    background: rgba(0, 0, 0, 0.7);
+}
+.body-content {
+    height: 100vh;
     display: flex;
-    padding-left: 100px;
-    padding-top: 20px;
-    
-}
-.body{
-    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    justify-items: center;
-    padding-top: 100px;
+    border-radius: 10px;
 }
-.nav{
-    margin: 0 auto;
-    margin-right: 0%;
-    padding-right: 200px;
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
 }
-ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        text-align: center;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-li:last-child{
-    margin-right: 20px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-li{
-    padding: 10px;
-    display: block;
+.nav-link:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #28a745 !important;
 }
-a{
-    color: white;
-    text-decoration: none;
+.btn-hover:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
-li:hover{
-    background-color: rgb(7, 135, 33);
-    border-radius: 5px;
-    
+.btn-hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
-h1{
-    font-size: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 50, 0.8) !important;
 }
-.fall{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+.logo-img {
+    height: 50px;
+    border-radius: 50%;
 }
-p{
-    width: 700px;
-    text-align: center;
-}
-button{
-    background-color: rgb(41, 236, 41);
-    padding: 10px;
-    border: 1px solid rgb(118, 246, 118);
-    border-radius: 3px;
-}
-button:hover{
-    background-color: rgb(4, 193, 4);;
+.section {
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
